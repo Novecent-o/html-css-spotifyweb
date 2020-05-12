@@ -3,31 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .wrapper {
     height: 100vh;
     width: 100vw;
     background-color: grey;
 }
-
-.m_container {
+.m_row {
     height: calc(100vh - 100px);
+}
+.m_container {
     width: 100%;
     background-color: red;
 }
 
 .col_preferiti {
+    float: left;
     height: 100%;
     width: 320px;
     background-color: orange;
+    overflow-y: auto;
 }
 
 .col_playlist {
+    float: left;
+    overflow-y: auto;
     height: 100%;
     width: calc(100% - 320px);
     background-color: pink;
 }
-.f_container {
+.footer_container {
     height: 100px;
     width: 100%;
     background-color: green;
