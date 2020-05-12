@@ -47,9 +47,11 @@ footer {
 .col_preferiti > .m_favorite {
     max-height: 100%;
     overflow-y: auto;
+    z-index: 3;
 }
 .col_preferiti > .m_user {
     height: 140px;
+    z-index: 0;
 }
 .col_playlist {
     width: calc(100% - 320px);
