@@ -29,7 +29,6 @@ footer {
     overflow-y: auto;
 }
 .col_preferiti {
-    position: relative;
     width: 320px;
     height: 100%;
     background-color: orange;
@@ -46,12 +45,11 @@ footer {
     height: 140px;
 }
 .col_preferiti > .m_favorite {
+    max-height: 100%;
     overflow-y: auto;
 }
 .col_preferiti > .m_user {
-    position: absolute;
-    bottom: 0;
-    height: 70px;
+    height: 140px;
 }
 .col_playlist {
     width: calc(100% - 320px);
