@@ -13,15 +13,15 @@
     width: 100vw;
     background-color: grey;
 }
-.m_row {
-    height: calc(100vh - 100px);
-}
-.m_container {
+
+.main_container {
     width: 100%;
     background-color: red;
 }
-
-.col_preferiti {
+.main_row {
+    height: calc(100vh - 100px);
+}
+.main_row > .col_preferiti {
     float: left;
     height: 100%;
     width: 320px;
@@ -29,7 +29,7 @@
     overflow-y: auto;
 }
 
-.col_playlist {
+.main_row > .col_playlist {
     float: left;
     overflow-y: auto;
     height: 100%;
@@ -37,7 +37,23 @@
     background-color: pink;
 }
 .footer_container {
+    display: flex;
     height: 100px;
     width: 100%;
     background-color: green;
+}
+.footer_container > .song {
+    height: 100%;
+    width: 20%;
+    background-color: coral;
+}
+.footer_container > .play {
+    height: 100%;
+    width: 60%;
+    background-color: violet;
+}
+.footer_container > .volume {
+    height: 100%;
+    width: 20%;
+    background-color: yellow;
 }
