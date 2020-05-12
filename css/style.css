@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+footer {
+    height: 100px;
+}
 .clearfix::after {
     content: "";
     display: table;
@@ -13,26 +16,44 @@
     width: 100vw;
     background-color: grey;
 }
-
 .main_container {
     width: 100%;
     background-color: red;
 }
-.main_row {
+.main_container .main_row {
     height: calc(100vh - 100px);
 }
-.main_row > .col_preferiti {
+.main_row > * {
     float: left;
     height: 100%;
-    width: 320px;
-    background-color: orange;
     overflow-y: auto;
 }
-
-.main_row > .col_playlist {
-    float: left;
-    overflow-y: auto;
+.col_preferiti {
+    position: relative;
+    width: 320px;
     height: 100%;
+    background-color: orange;
+}
+.col_preferiti > * {
+    width: 100%;
+    background-color: cyan;
+    border-top: 1px solid black;
+}
+.col_preferiti > .m_logo {
+    height: 70px;
+}
+.col_preferiti > .m_list_search {
+    height: 140px;
+}
+.col_preferiti > .m_favorite {
+    overflow-y: auto;
+}
+.col_preferiti > .m_user {
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+}
+.col_playlist {
     width: calc(100% - 320px);
     background-color: pink;
 }
@@ -42,18 +63,19 @@
     width: 100%;
     background-color: green;
 }
-.footer_container > .song {
+.footer_container .f_box {
     height: 100%;
+}
+.footer_container > .song {
     width: 20%;
     background-color: coral;
 }
 .footer_container > .play {
-    height: 100%;
     width: 60%;
     background-color: violet;
+
 }
 .footer_container > .volume {
-    height: 100%;
     width: 20%;
     background-color: yellow;
 }
