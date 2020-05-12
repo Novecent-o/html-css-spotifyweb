@@ -45,13 +45,11 @@ footer {
     height: 140px;
 }
 .col_preferiti > .m_favorite {
-    max-height: 100%;
+    height: calc(100% - 350px);
     overflow-y: auto;
-    z-index: 3;
 }
 .col_preferiti > .m_user {
     height: 140px;
-    z-index: 0;
 }
 .col_playlist {
     width: calc(100% - 320px);
@@ -73,7 +71,6 @@ footer {
 .footer_container > .play {
     width: 60%;
     background-color: violet;
-
 }
 .footer_container > .volume {
     width: 20%;
