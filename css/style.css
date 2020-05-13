@@ -31,12 +31,10 @@ footer {
 .col_preferiti {
     width: 320px;
     height: 100%;
-    background-color: orange;
+    background-color: #000000;
 }
 .col_preferiti > * {
     width: 100%;
-    background-color: cyan;
-    border-top: 1px solid black;
 }
 .col_preferiti > .m_logo {
     height: 70px;
@@ -53,26 +51,35 @@ footer {
 }
 .col_playlist {
     width: calc(100% - 320px);
-    background-color: pink;
+    background-color: #141922;
+    color: #7d7f84;
+}
+.col_playlist .nav_bar {
+    position: fixed;
+    width: calc(100% - 320px);
+    height: 100px;
+    background-color: #080b12;
+    color: white;
+    opacity: 0.5;
+    z-index: 0;
 }
 .footer_container {
     display: flex;
     height: 100px;
     width: 100%;
-    background-color: green;
+    background-color: #282828;
+    color: #ffffff;
+    z-index: 10;
 }
 .footer_container .f_box {
     height: 100%;
 }
 .footer_container > .song {
     width: 20%;
-    background-color: coral;
 }
 .footer_container > .play {
     width: 60%;
-    background-color: violet;
 }
 .footer_container > .volume {
     width: 20%;
-    background-color: yellow;
 }
