@@ -66,6 +66,10 @@ footer {
     background-color: #080b12;
     color: white;
     opacity: 0.5;
+<<<<<<< HEAD
+=======
+    z-index: 0;
+>>>>>>> master
 }
 .footer_container {
     display: flex;
@@ -74,6 +78,10 @@ footer {
     width: 100%;
     background-color: #282828;
     color: #ffffff;
+<<<<<<< HEAD
+=======
+    z-index: 10;
+>>>>>>> master
 }
 .footer_container .f_box {
     height: 100%;
