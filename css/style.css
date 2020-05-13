@@ -1,8 +1,12 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* Fine Reset */
+
+/* Regole Generali */
 body {
     font-family: 'Heebo', sans-serif;
 }
@@ -13,10 +17,11 @@ body {
 main {
     height: calc(100% - 100px);
     width: 100%;
+    z-index: 0
 }
 footer {
     height: 100px;
-    z-index: 0;
+    z-index: 1;
 }
 li {
     list-style: none;
@@ -30,14 +35,18 @@ a:hover {
     text-decoration: inherit;
     color: white;
 }
+/* Fine Regole Generali */
+
+/* INIZIO MAIN */
+/* Main Nav */
 .main_nav {
     float: left;
-    width: 320px;
+    width: 300px;
     height: 100%;
     background-color: #000000;
     color: white;
     overflow: auto;
-    padding-left: 20px;
+    padding: 0 20px 5px 20px;
 }
 .nav_element_flex {
     height: 100%;
@@ -47,7 +56,6 @@ a:hover {
 }
 .n_element {
     width: 100%;
-    /* min-height: 100px; */
 }
 .n_element.n_list {
     flex-grow: 1;
@@ -59,6 +67,12 @@ a:hover {
 .main_nav .n_logo img {
     height: 50px;
 }
+.main_nav .small_logo {
+    display: none;
+}
+.main_nav .n_search .n_icone {
+    margin: 10px 0;
+}
 .main_nav .n_search img {
     height: 33px;
     margin-right: 10px;
@@ -66,16 +80,31 @@ a:hover {
 .main_nav .n_list {
     padding: 5px 0;
 }
+.main_nav .n_list .n_crea {
+    display: inline-block;
+}
 .main_nav .n_list li {
     margin: 20px 0;
 }
 .main_nav .n_list .fa-plus-square {
-    font-size: 39px;                  /* non riesco a centrare la scritta all'icona PLUS */
+    font-size: 39px;
+    margin-right: 10px;                /* non riesco a centrare la scritta all'icona PLUS */
 }
+.main_nav .n_user img {
+    height: 20px;
+    margin-right: 10px;
+}
+.main_nav .n_user .n_profile {
+    height: 30px;
+    background-color: #6e6e6e;
+    border-radius: 50%;
+}
+/* Fine Main Nav */
+/* Inizio Main Content */
 .main_content {
     float: left;
     height: 100%;
-    width: calc(100% - 320px);
+    width: calc(100% - 300px);
     background-color: #141922;
     overflow: auto;
     color: white;
@@ -86,9 +115,55 @@ a:hover {
     right: 0;
     height: 100px;
     text-align: right;
-    width: calc(100% - 320px);
+    width: calc(100% - 300px);
     background-color: rgba(0, 0, 0, 0.5);
 }
+/* Fine Main Content */
+/* Inizio MediaQuery */
+@media screen and (max-width: 559px) {
+    .main_nav {
+        width: 80px;
+        padding: 10px;
+        text-align: center;
+    }
+    .main_content {
+        width: calc(100% - 80px);
+    }
+    .m_upgrade {
+        width: calc(100% - 80px);
+    }
+    .main_nav .n_logo {
+        display: none;
+    }
+    .small_logo {
+        height: 40px;
+        margin-bottom: 5px;
+    }
+    .large_logo {
+        display: none;
+    }
+    .main_nav li,
+    .main_nav span,
+    .main_nav p {
+        display: none;
+    }
+    .main_nav .n_search img {
+        margin-right: 0;
+    }
+    .main_nav .n_list .fa-plus-square {
+        margin-right: 0;
+    }
+    .main_nav .n_user img {
+        margin-right: 0;
+    }
+}
+@media screen and (min-width: 560px){
+
+}
+/* Fine MediaQuery */
+/* FINE MAIN */
+
+/* INIZIO FOOTER */
 .footer_container {
     display: flex;
     flex-direction: row;
@@ -110,3 +185,4 @@ a:hover {
 .footer_container > .volume {
     width: 20%;
 }
+/* FINE FOOTER */
