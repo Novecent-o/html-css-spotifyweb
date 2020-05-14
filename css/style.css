@@ -198,12 +198,13 @@ h2 {
     height: 100%;
     width: 100%;
     color: #ffffff;
+    justify-content: space-between;
 }
 .footer_container .f_box {
     height: 100%;
 }
 .footer_container .song {
-    width: 25%;
+    flex-basis: 20%;
 }
 .footer_container .song .flx_items1 {
     width: 20%;
@@ -238,44 +239,61 @@ h2 {
     margin-right: 7px;
 }
 .footer_container .play {
-    width: 50%;
+    flex-basis: 50%;
 }
 .play .player {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .player .play1 {
-    height: 50%;
-    padding: 10px 0;
+    height: 48px;
+    width: 100%;
+    padding-top: 17px;
+    white-space: nowrap;
 }
 .player .play1 > * {
     display: inline-block;
     margin: 0 10px;
     font-size: 20px;
 }
+.play1 .fa-play-circle {
+  font-size: 25px;
+}
+.player .play2 {
+    height: 48px;
+    width: 100%;
+    white-space: nowrap;
+}
 .player .play2 > * {
     display: inline-block;
 }
-.player .play2 i {
-    font-size: 20px;
-}
-.player .play2 .barra_player1 {
+.player .play2 .barra_player::before {
+    content: "";
+    display: inline-block;
     height: 5px;
     width: 110px;
-    margin-right: 0;
     background-color: white;
+    vertical-align: middle;
+    border-radius: 5px 0 0 5px;
 }
-.player .play2 .barra_player2 {
+.player .play2 .barra_player::after {
+    content: "";
+    display: inline-block;
     height: 5px;
     width: 200px;
-    margin-left: 0;
     background-color: #6e6e6e;
+    vertical-align: middle;
+    border-radius: 0 5px 5px 0;
+}
+.player .play2 span {
+  margin: 0 20px;
 }
 .footer_container .volume {
-    width: 25%;
+    flex-basis: 20%;
 }
 /* FINE FOOTER */
 
