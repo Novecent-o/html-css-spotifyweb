@@ -35,6 +35,10 @@ a:hover {
     text-decoration: inherit;
     color: white;
 }
+h2 {
+    text-align: left;
+    margin-top: 37px;
+}
 /* Fine Regole Generali */
 
 /* INIZIO MAIN */
@@ -66,9 +70,6 @@ a:hover {
 }
 .main_nav .n_logo img {
     height: 50px;
-}
-.main_nav .small_logo {
-    display: none;
 }
 .main_nav .n_search .n_icone {
     margin: 10px 0;
@@ -108,6 +109,8 @@ a:hover {
     background-color: #141922;
     overflow: auto;
     color: white;
+    padding-top: 120px;
+    text-align: center;
 }
 .m_upgrade {
     position: fixed;
@@ -117,6 +120,7 @@ a:hover {
     text-align: right;
     width: calc(100% - 240px);
     background-color: rgba(0, 0, 0, 0.5);
+    padding-right: 20px;
 }
 .m_upgrade .buttom_upgrade {
     display: flex;
@@ -124,7 +128,6 @@ a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    padding: 0 50px 0 0;
 }
 .m_upgrade p {
     text-transform: uppercase;
@@ -133,9 +136,21 @@ a:hover {
     border: 1px solid white;
     border-radius: 21px;
 }
+.main_content .list-inline li {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.main_content .row img {
+    width: 100%;
+    margin-top: 20px;
+}
+.main_content .row p {
+    font-size: 15px;
+    color: #6e6e6e;
+}
 /* Fine Main Content */
 /* Inizio MediaQuery */
-@media screen and (max-width: 559px) {
+@media screen and (max-width: 575px) {
     .main_nav {
         width: 80px;
         padding: 10px;
@@ -150,12 +165,14 @@ a:hover {
     .main_nav .n_logo {
         display: none;
     }
-    .small_logo {
-        height: 40px;
-        margin-bottom: 5px;
-    }
     .large_logo {
         display: none;
+    }
+    .small_logo {
+        display: block;
+        height: 35px;
+        margin-bottom: 5px;
+        margin-left: 13px;
     }
     .main_nav li,
     .main_nav span,
@@ -170,6 +187,20 @@ a:hover {
     }
     .main_nav .n_user img {
         margin-right: 0;
+    }
+    .main_content .m_upgrade {
+        padding-right: 0;
+    }
+    .main_content .buttom_upgrade {
+        min-width: 264px;
+    }
+    .main_content .buttom_upgrade p {
+        min-width: 264px;
+    }
+}
+@media screen and (min-width: 576px) {
+    .main_nav .small_logo {
+        display: none;
     }
 }
 /* Fine MediaQuery */
