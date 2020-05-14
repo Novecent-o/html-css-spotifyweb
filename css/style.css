@@ -261,12 +261,13 @@ h2 {
     font-size: 20px;
 }
 .play1 .fa-play-circle {
-  font-size: 25px;
+    font-size: 25px;
 }
 .player .play2 {
     height: 48px;
     width: 100%;
     white-space: nowrap;
+    padding-top: 10px;
 }
 .player .play2 > * {
     display: inline-block;
@@ -280,6 +281,9 @@ h2 {
     vertical-align: middle;
     border-radius: 5px 0 0 5px;
 }
+.barra_player:hover.barra_player::before  {
+    background-color: green;
+}
 .player .play2 .barra_player::after {
     content: "";
     display: inline-block;
@@ -290,7 +294,7 @@ h2 {
     border-radius: 0 5px 5px 0;
 }
 .player .play2 span {
-  margin: 0 20px;
+    margin: 0 20px;
 }
 .footer_container .volume {
     flex-basis: 20%;
