@@ -65,40 +65,40 @@ h2 {
     flex-grow: 1;
     overflow: auto;
 }
-.main_nav .n_logo {
+.nav_element_flex .n_logo {
     margin: 20px 0;
 }
-.main_nav .n_logo img {
+.nav_element_flex .n_logo img {
     height: 50px;
 }
-.main_nav .n_search .n_icone {
+.n_search .n_icone {
     margin: 10px 0;
 }
-.main_nav .n_search img {
+.n_search img {
     height: 33px;
     margin-right: 10px;
 }
-.main_nav .n_list {
+.nav_element_flex .n_list {
     padding: 5px 0;
 }
-.main_nav .n_list .crea_lista p {
+.n_list .crea_lista p {
     display: inline-block;
     position: relative;
     bottom: 9px;
     font-size: 17px;
 }
-.main_nav .n_list li {
+.nav_element_flex .n_list li {
     margin: 20px 0;
 }
-.main_nav .n_list .fa-plus-square {
+.n_list .fa-plus-square {
     font-size: 39px;
-    margin-right: 10px;                /* non riesco a centrare la scritta all'icona PLUS */
+    margin-right: 10px;
 }
 .main_nav .n_user img {
     height: 20px;
     margin-right: 10px;
 }
-.main_nav .n_user .n_profile {
+.n_user .n_profile {
     height: 30px;
     background-color: #6e6e6e;
     border-radius: 50%;
@@ -115,6 +115,7 @@ h2 {
     padding-top: 120px;
     text-align: center;
 }
+/* Inizio Nav Bar Superiore */
 .m_upgrade {
     position: fixed;
     top: 0;
@@ -133,33 +134,34 @@ h2 {
     align-items: center;
     justify-content: flex-end;
 }
-.m_upgrade p {
+.buttom_upgrade p {
     text-transform: uppercase;
     margin: 0;
     padding: 10px 60px;
     border: 1px solid white;
     border-radius: 21px;
 }
-.m_upgrade p:hover {
+.buttom_upgrade p:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
-.main_content .container-fluid p {
-    text-align: left;
-    color: #6e6e6e;
-}
-.main_content .list-inline li {
+/* Fine Nav Bar Superiore */
+.list-inline li {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-.main_content .row .my_col {
+.row p {
+    text-align: left;
+    color: #6e6e6e;
+}
+.row .my_col {
     margin-top: 20px;
     padding: 0 10px;
 }
-.main_content .row .my_col .my_img {
+.my_col .my_img {
     position: relative;
 }
-.main_content .row .my_col .fa-play-circle {
+.my_col .fa-play-circle {
     position: absolute;
     top: 50%;
     left:50%;
@@ -168,25 +170,25 @@ h2 {
     color: white;
     opacity: 0;
 }
-.main_content .row .my_col:hover {
+.row .my_col:hover {
     cursor: pointer;
 }
-.main_content .row .my_col:hover .my_img{
+.my_col:hover .my_img {
     filter: sepia(0.8);
-    transition: 0.5s ease;
+    transition: 0.2s ease;
 }
-.main_content .row .my_col:hover .fa-play-circle {
+.my_col:hover .fa-play-circle {
     opacity: 1;
 }
-.main_content .row img {
+.row img {
     width: 100%;
 }
-.main_content .row p {
+.row p {
     text-align: center;
     font-size: 15px;
     color: #6e6e6e;
 }
-.main_content .row .img_tonda {
+.row .img_tonda {
     border-radius: 50%;
 }
 /* Fine Main Content */
@@ -208,10 +210,7 @@ h2 {
 .song .flx_items1 {
     width: 15%;
     display: inline-block;
-    /* text-align: center; */
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 30px 10px 0 10px;
 }
 .song .flx_items1 img {
     width: 40px;
