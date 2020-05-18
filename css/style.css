@@ -150,8 +150,8 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-.row p {
-    text-align: left;
+.container-fluid .row p {
+    text-align: center;
     color: #6e6e6e;
 }
 .row .my_col {
@@ -183,8 +183,8 @@ h2 {
 .row img {
     width: 100%;
 }
-.row p {
-    text-align: center;
+.container-fluid p {
+    text-align: left;
     font-size: 15px;
     color: #6e6e6e;
 }
