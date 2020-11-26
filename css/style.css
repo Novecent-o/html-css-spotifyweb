@@ -39,6 +39,10 @@ h2 {
     text-align: left;
     margin-top: 37px;
 }
+.active_green {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #adff2f;
+}
 /* Fine Regole Generali */
 
 /* INIZIO MAIN */
