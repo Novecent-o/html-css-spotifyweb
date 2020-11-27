@@ -11,6 +11,17 @@ $(document).ready(
                 $(this).removeClass('active_green');
             }
         );
+
+        $('.n_icone').mouseenter(
+            function() {
+                $(this).addClass('active_grey');
+            }
+        );
+        $('.n_icone').mouseleave(
+            function() {
+                $(this).removeClass('active_grey');
+            }
+        );
     }
 );
 
