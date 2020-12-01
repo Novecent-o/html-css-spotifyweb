@@ -123,7 +123,10 @@ h2 {
     height: 100%;
     width: calc(100% - 240px);
     /* background-color: #141922; */
-    background-image: linear-gradient(#690EAA, #D51C28);
+    /* background-image: linear-gradient(#690EAA, #D51C28); */
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
     overflow: auto;
     color: white;
     padding-top: 120px;
